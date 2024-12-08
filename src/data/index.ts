@@ -2,55 +2,59 @@ import { First, Second, Third, Fourth, Fifth } from '@/icons/ApproachIcons';
 
 export const NAV_ITEMS = [
   {
-    title: 'Главная',
+    title: 'Home',
     href: 'main',
   },
   {
-    title: 'О нас',
+    title: 'About Us',
     href: 'about',
   },
   {
-    title: 'Услуги',
+    title: 'Services',
     href: 'services',
   },
   {
-    title: 'Подход',
+    title: 'Approach',
     href: 'approach',
   },
   {
-    title: 'Связаться',
+    title: 'Contact Us',
     href: 'contact',
   },
 ];
 
 export const CARDS = [
   {
-    title: 'Дизайн',
+    title: 'ROI on Paid Advertisement',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam alias placeat temporibus mollitia doloribus. Consequatur aperiam facilis culpa fuga quia! Labore, sequi! Optio officiis obcaecati tempora voluptates consequuntur, placeat ad.',
+      'Return on Investment (ROI) measures the profitability of your advertising efforts. Tracking ROI ensures your campaigns generate more revenue than they cost, optimizing every dollar spent.',
     services: [
-      ['Веб страниц', 'Брендинг'],
-      ['Мобильные приложения', 'Лого'],
+      ['Facebook Ads', 'Instagram Ads'],
+      ['Youtube Ads', 'Tiktok Ads'],
     ],
     number: '01.',
-    classes: '',
+    classes: 'border-t border-gray-1/50',
   },
   {
-    title: 'Фулстек разработка',
+    title: 'Email Marketing',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam alias placeat temporibus mollitia doloribus. Consequatur aperiam facilis culpa fuga quia! Labore, sequi! Optio officiis obcaecati tempora voluptates consequuntur, placeat ad.',
+      'Email marketing delivers exceptional ROI by reaching your audience directly with personalized, cost-effective campaigns. It’s a proven strategy for driving conversions, nurturing leads, and retaining customers.',
     services: [
-      ['Онлайн магазин', 'Веб приложения'],
-      ['CMS', 'Разработка API'],
+      ['Promotional Emails', 'Drip Campaigns'],
+      ['Welcome Emails', 'Re-engagement'],
+      ['Transactional Emails', 'Seasonal Emails'],
     ],
     number: '02.',
     classes: 'border-t border-gray-1/50',
   },
   {
-    title: 'Мобильная разработка',
+    title: 'Video Editing',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam alias placeat temporibus mollitia doloribus. Consequatur aperiam facilis culpa fuga quia! Labore, sequi! Optio officiis obcaecati tempora voluptates consequuntur, placeat ad.',
-    services: [['Android', 'IOS']],
+      'Video editing transforms raw footage into compelling visual stories, enhancing brand messaging and audience engagement. ',
+    services: [
+      ['Short-Form Content', 'Motion Graphics'],  
+      ['Promotional Videos', 'Portfolio videos'],
+    ],
     number: '03.',
     classes: 'border-t border-gray-1/50',
   },
@@ -59,89 +63,42 @@ export const CARDS = [
 export const APPROACH_CARDS = [
   {
     icon: First,
-    title: 'Консультация',
+    title: 'Integrated Marketing Campaigns',
     description:
-      'Мы внимательно выслушиваем пожелания и представления заказчика о проекте. Затем делимся своим видением и, на основе этого обмена, приходим к общему соглашению.',
+      'Combine paid ads, email marketing, and video editing into a cohesive strategy. Use video ads in paid campaigns, integrate them into email campaigns, and amplify reach with platform-specific targeting.',
   },
   {
     icon: Second,
-    title: 'Совместный обзор',
+    title: 'Custom-Tailored Strategies',
     description:
-      'Затем приступаем к созданию дизайна. После завершения проводим совместный обзор, где заказчик, при желании может внести изменения.',
+      'Offer tailored solutions based on the client’s goals. For example, use paid ads to drive traffic, email marketing to nurture leads, and video editing to create captivating content.',
   },
   {
     icon: Third,
-    title: 'Разработка',
-    description: 'После утверждения дизайна, мы приступаем к непосредственной разработке продукта.',
+    title: 'Performance-Driven Focus',
+    description: 'Emphasize results. Showcase how our paid ad strategies, coupled with compelling videos and email campaigns, lead to measurable growth in sales, engagement, or brand awareness.',
   },
   {
     icon: Fourth,
-    title: 'Тестирование',
+    title: 'Creative Content Production',
     description:
-      'По завершении разработки тщательно тестируем каждый компонент продукта. Затем приглашаем заказчика для пользовательского тестирования.',
+      'Leverage our video editing expertise to produce visually stunning assets for ad campaigns and email campaigns. Offer unique, creative content tailored to each platform.',
   },
   {
     icon: Fifth,
-    title: 'Финальный результат',
+    title: 'Full-Funnel Marketing Solution',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates laboriosam ad eius, culpa soluta ab. Beatae optio quas adipisci aliquam quia velit soluta iste dicta, modi tenetur magnam, aut laborum placeat est. Unde minima amet illo eveniet qui sunt omnis laudantium laboriosam, officia dignissimos molestias tempore velit. Provident, explicabo. Dolor.',
+      'Provide a start-to-finish service. Use paid ads to attract prospects, video editing to create appealing content, and email marketing to guide them through the conversion funnel.',
   },
 ];
 
-export const RADIO_FIELDS = [
-  {
-    title: 'Какой тип услуг вас интересует?',
-    classes: 'mr-[2.25vw]',
-    radioArray: [
-      { name: 'Дизайн / Брендинг', value: 'design/branding' },
-      { name: 'Веб разработка', value: 'web-dev' },
-      { name: 'Мобильная разработка', value: 'mobile-dev' },
-      { name: 'Все вышеперечисленные', value: 'all-types' },
-      { name: 'Другое', value: 'other-service' },
-    ],
-    formKey: '_service',
-  },
-  {
-    title: 'Каков ваш бюджет?',
-    classes: '',
-    radioArray: [
-      { name: '8000TMT - 15000TMT', value: '8-15' },
-      { name: '15000TMT - 25000TMT', value: '15-25' },
-      { name: '25000TMT - 50000TMT', value: '25-50' },
-      { name: '50000TMT+', value: '50+' },
-    ],
-    formKey: '_budget',
-  },
-  {
-    title: 'Примерно, сколько страниц будет иметь ваш проект?',
-    classes: 'mr-[2.25vw]',
-    radioArray: [
-      { name: 'Меньше 5-ти', value: '<5' },
-      { name: '6-10', value: '6-10' },
-      { name: '11-20', value: '11-20' },
-      { name: '20+', value: '20+' },
-    ],
-    formKey: '_pages',
-  },
-  {
-    title: 'Насколько быстро вам нужен проект?',
-    classes: '',
-    radioArray: [
-      { name: 'Максимально быстро', value: 'max-fast' },
-      { name: 'Высокая приоритетность ', value: 'high-prio ' },
-      { name: 'Обычное время', value: 'regular' },
-      { name: 'Не торопитесь ', value: 'take-your-time' },
-    ],
-    formKey: '_quickness',
-  },
-];
 
 export const INPUT_FIELDS = [
-  { label: 'Выше имя', name: 'first', classes: 'inline-block !w-[calc(50%-2vw)] mr-[4vw]', required: true },
-  { label: 'Ваш номер', name: 'phone', classes: 'inline-block !w-[calc(50%-2vw)]', type: 'number', required: true },
+  { label: 'Name', name: 'first', classes: 'inline-block !w-[calc(50%-2vw)] mr-[4vw]', required: true },
+  { label: 'Phone', name: 'phone', classes: 'inline-block !w-[calc(50%-2vw)]', type: 'number', required: true },
   { label: 'Email', name: 'email', classes: '', type: 'email' },
-  { label: 'Название компании', name: 'company', classes: '', required: true },
-  { label: 'Ссылка на сайт', name: 'websiteUrl', classes: '' },
+  { label: 'Name of Organization', name: 'company', classes: '', required: true },
+  { label: 'Website', name: 'websiteUrl', classes: '' },
 ];
 
 export const BOOK_FORM_DEFAULT_STATE = {

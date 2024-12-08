@@ -3,7 +3,7 @@ import { FC, useEffect, useState } from 'react';
 
 import SidebarMenu from '@/components/SidebarMenu';
 import { AnimatePresence } from 'framer-motion';
-import { LogoIcon } from '@/icons/ApproachIcons/LogoIcon';
+import Image from 'next/image';
 
 interface Props {}
 
@@ -32,7 +32,13 @@ const Index: FC<Props> = () => {
         </button>
       </div>
       <button title="your_agency_name" className="p-[2vw] fixed z-[100] top-0 left-0 group">
-        <LogoIcon className="w-[5vw] h-[5vw] group-hover:text-white/80 transition duration-300" />
+        <Image
+         src="/logo.png"
+         alt='Revup Agency'
+         height={400}
+         width={400}
+         className="w-[5vw] h-[5vw] group-hover:text-white/80 transition duration-300" 
+         />
       </button>
       <AnimatePresence mode="wait">{isActive && (
         <SidebarMenu close={closeSidebar} />

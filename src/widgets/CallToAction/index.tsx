@@ -19,7 +19,7 @@ const Index: FC<Props> = () => {
       <div className=" mx-auto flex w-full max-w-[60vw] md:max-w-[90%] flex-1 flex-col items-center justify-center text-center">
         <h3 className="text-[4vw] md:text-[8vw] font-medium">Got Any Queries?</h3>
         <p className="mt-[0.6vw] text-[1.7vw] md:text-[3.2vw] font-normal text-gray-300 md:leading-[1.3]">
-           Reach Out to Us – We're Here to Help!
+           Reach Out to Us – We&apos;re Here to Help!
         </p>
         <Button
           onClick={handleFormToggle}
