@@ -31,7 +31,7 @@ const Index: FC<Props> = () => {
           <div className={`burger ${isActive && 'burgerActive'}`}></div>
         </button>
       </div>
-      <button title="your_agency_name" className="p-[2vw] fixed z-[100] top-0 left-0 group">
+      <a href='#main' title="your_agency_name" className="p-[2vw] fixed z-[100] top-0 left-0 group">
         <Image
          src="/logo.png"
          alt='Revup Agency'
@@ -39,7 +39,7 @@ const Index: FC<Props> = () => {
          width={400}
          className="w-[5vw] h-[5vw] group-hover:text-white/80 transition duration-300" 
          />
-      </button>
+      </a>
       <AnimatePresence mode="wait">{isActive && (
         <SidebarMenu close={closeSidebar} />
       )}
